@@ -1,0 +1,326 @@
+/* ------------------------------------
+  Base Element Styles
+------------------------------------ */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+  background-color: #fafafa;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 1.5em;
+}
+
+h1,
+nav,
+h2,
+footer {
+	font-family: 'Patua One', cursive;
+}
+
+a {
+	text-decoration: none;
+	color: #3a3a3a;
+}
+
+a:visited {
+  color: #3a3a3a;
+}
+
+ul {
+  list-style-type: none;
+	margin: 0 auto;
+	padding-left: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* ------------------------------------
+  Base Layout Styles
+------------------------------------ */
+
+/* ---- Navigation ---- */
+.name a,
+.main-nav li {
+  display: block;
+  max-width: 90%;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  margin: 5px auto;
+}
+
+
+.main-nav li a {
+  font-size: 1.2em;
+  color: #3a3a3a;
+  text-transform: capitalize;
+}
+
+.main-nav a:hover {
+  color: #e67670;
+}
+
+nav {
+  margin-bottom: 15px;
+}
+
+/* ---- Header ---- */
+
+.main-description {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* ---- Layout containers ---- */
+
+h2 {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+	font-weight: 600;
+}
+
+.main-content {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.container h3 {
+  font-size: 1.4em;
+	font-weight: normal;
+}
+
+.container p {
+  padding: 5px 30px 30px;
+}
+
+.secondary-content {
+  text-align: center;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.skill-list li {
+  border-radius: 6px;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e67670;
+  color: white;
+  margin: 6px;
+}
+
+.contact {
+	text-align: center;
+	padding: 10px 15px;
+	margin: 10px auto;
+}
+
+.contact table {
+	margin: 0 auto;
+}
+
+.contact td {
+	padding-left: 15px;
+	text-align: left;
+}
+
+/* ---- Footer ---- */
+
+footer {
+	padding: 1em 1em;
+	margin: 20px auto;
+	font-size: 1.2em;
+	max-width: 95%;
+	border-top: 1px solid #f2f2f2;
+}
+
+footer span {
+	float: left;
+}
+
+footer a {
+	float: right;
+}
+
+footer li {
+	display: none;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* ------------------------------------
+  Media queries
+------------------------------------ */
+
+@media (min-width: 768px) {
+
+	/* ---- main ---- */
+
+	.wrapper {
+		max-width: 95%
+		margin: 0 auto;
+	}
+
+/* ---- nav ---- */
+	.name a {
+		background-color: inherit;
+	}
+
+	.main-nav li {
+	  display: inline-block;
+	  text-align: center;
+	  padding: 10px 15px;
+		background-color: inherit;
+	}
+
+	.main-nav ul {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	/* ---- description ---- */
+
+	.main-description {
+		max-width: 95%;
+	}
+
+	.profile-picture {
+		max-width: 50%;
+		float: right;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.description-text {
+		max-width: 50%;
+		margin: 0 auto;
+		padding: 1em;
+		float: left;
+		font-size: 1.2em;
+		text-align: left;
+	}
+
+	/* ---- containers ---- */
+
+	.container {
+		max-width: 50%;
+		float: left;
+		padding: 10px;
+	}
+
+	#travel-app-container {
+	    clear: left;
+	}
+
+	/* ---- skills ---- */
+
+	.skills-image {
+		max-width: 60%;
+		margin: auto;
+		float: left;
+	}
+
+	.skill-list ul{
+		max-width: 40%;
+		margin-top: 3em;
+		padding-left: 10px;
+		float: right;
+	}
+
+	.contact {
+		max-width: 70%;
+		margin-bottom: 40px;
+	}
+
+	/* ---- Footer ---- */
+
+	.detailed-footer-bar {
+		float: right;
+	}
+
+
+	footer li {
+		display: inline-block;
+		float: left;
+		padding: 0 10px;
+		text-transform: capitalize;
+	}
+
+	.simple-footer-bar a {
+		display: none;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	/* ---- main ---- */
+
+	.wrapper {
+		max-width: 1024px;
+		margin: 20px auto;
+	}
+
+	/* ---- navigation ---- */
+	nav {
+		max-width: 100%;
+	}
+
+	.name a {
+		float: left;
+	}
+
+	.top-navigation {
+		float: right;
+	}
+
+/* ---- description ---- */
+	.main-description {
+		max-width: 100%;
+		padding: 30px;
+		margin-bottom: 30px;
+	}
+
+	.description-text {
+		font-size: 1.3em;
+		padding-left: 0;
+	}
+
+/* ---- containers ---- */
+	.main-content {
+		margin: 0 auto;
+		background-color: #fff;
+		max-width: 100%;
+	}
+
+	.container {
+		max-width: 33.333%;
+		float: left;
+	}
+
+	#travel-app-container {
+			clear: none;
+	}
+
+}
